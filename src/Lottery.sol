@@ -113,7 +113,7 @@ contract Lottery {
         //  debe haber mas de un voleto comprado
         require(ticketBought.length > 0, "There is not tickets bought");
         //  declaracion de la longitud del array
-        uint length = ticketBought.lenght;
+        uint length = ticketBought.length;
         //  aleatoriamente elijo numero entre 0 y longitud
         uint iArray = uint(keccak256(abi.encodePacked(now))) % length;
         //  seleccion del numero aleatorio mediante la posicion del array
